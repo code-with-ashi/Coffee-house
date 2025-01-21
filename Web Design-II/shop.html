@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop now</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            align-items: flex-start; 
+            background: rgb(248, 247, 247);
+        }
+        h2{
+            text-align: center;
+        }
+        #img {
+            object-fit: cover;
+            height: 400px;
+            width: 400px;
+            border-radius: 20px;
+            padding-top: 100px;                    
+        }
+        table {
+            width: 100%;
+            padding-top: 80px;
+
+        }
+        input, select {
+            border-radius: 1px solid black;
+            padding: 5px;
+        }
+        #button {
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        color: black;
+        padding: 12px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #button:hover {
+        background-color: rgb(22, 22, 22);
+        color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="shopimg.jpg" id="img" alt="Shop Image">
+        <h2>SHOP NOW</h2>
+        <form>
+            <table  align="center" border="0" cellpadding="10" id="table">
+                <tr>
+                    <th align="left">
+                        <font size="5"><label for="name">Name:</label></font>
+                    </th>
+                    <td><input type="text" name="name" placeholder="Enter Name" required></td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <font size="5"><label for="address">Address:</label></font>
+                    </th>
+                    <td><input type="text" name="address" placeholder="Enter Address" required></td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <font size="5"><label for="number">Phone no.:</label></font>
+                    </th>
+                    <td><input type="tel" name="number" placeholder="Enter Phone no." required></td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <font size="5"><label for="date"><b>Date:</b></label></font>
+                    </td>
+                    <td><input type="date" name="date" required></td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <font size="5">Select Coffee:</font>
+                    </th>
+                    <td>
+                        <select name="Ice cream Flavours">
+                            <option value="Mocha">Mocha</option>
+                            <option value="Americano">Americano</option>
+                            <option value="Espresso">Espresso</option>
+                            <option value="Cappuccino" selected>Cappuccino</option>
+                            <option value="Flat White">Flat White</option>
+                            <option value="Irish">Irish</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <font size="5">Choose toppings:</font>
+                    </th>
+                    <td>
+                        <select name="Toppings">
+                            <option value="sprinkles" selected>Sprinkles</option>
+                            <option value="whipped cream">Whipped cream</option>
+                            <option value="oreos">Oreos</option>
+                            <option value="chocochips">Chocolate Chips</option>
+                            <option value="choppednuts">Chopped Nuts</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <font size="5">Quantity:</font>
+                    </th>
+                    <td>
+                        <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <font size="5">Payment Mode:</font>
+                    </th>
+                    <td>
+                        <input type="radio" name="mode">
+                        <font size="4"><label for="mode">Online</label><br>
+                        <input type="radio" name="mode">
+                        <label for="mode">Cash</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit" id="button">
+                        <input type="reset" value="Reset" id="button">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
